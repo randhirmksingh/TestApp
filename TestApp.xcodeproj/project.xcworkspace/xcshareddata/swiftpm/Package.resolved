@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "package1",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/randhirmksingh/Package1.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "742af12ddb6198fc76afc06836f3089f1f88159b"
+      }
+    },
+    {
+      "identity" : "package2",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/randhirmksingh/Package2.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "6de6802b214d348ab47c0e80ce81fa273bc88770"
+      }
+    }
+  ],
+  "version" : 2
+}

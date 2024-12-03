@@ -6,13 +6,16 @@
 //
 
 import Cocoa
+import Package1
+import Package2
 
 class ViewController: NSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        print("Test App")
+        Package1Class.hello()
+        Package2Class.hello()
     }
 
     override var representedObject: Any? {

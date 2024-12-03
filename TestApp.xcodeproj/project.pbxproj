@@ -11,6 +11,8 @@
 		2292B8AC2CFF2546006AB67A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2292B8AB2CFF2546006AB67A /* ViewController.swift */; };
 		2292B8AE2CFF254A006AB67A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2292B8AD2CFF254A006AB67A /* Assets.xcassets */; };
 		2292B8B12CFF254A006AB67A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2292B8AF2CFF254A006AB67A /* Main.storyboard */; };
+		2292B8BA2CFF25B8006AB67A /* Package1 in Frameworks */ = {isa = PBXBuildFile; productRef = 2292B8B92CFF25B8006AB67A /* Package1 */; };
+		2292B8BD2CFF25CC006AB67A /* Package2 in Frameworks */ = {isa = PBXBuildFile; productRef = 2292B8BC2CFF25CC006AB67A /* Package2 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2292B8BD2CFF25CC006AB67A /* Package2 in Frameworks */,
+				2292B8BA2CFF25B8006AB67A /* Package1 in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +81,10 @@
 			dependencies = (
 			);
 			name = TestApp;
+			packageProductDependencies = (
+				2292B8B92CFF25B8006AB67A /* Package1 */,
+				2292B8BC2CFF25CC006AB67A /* Package2 */,
+			);
 			productName = TestApp;
 			productReference = 2292B8A62CFF2546006AB67A /* TestApp.app */;
 			productType = "com.apple.product-type.application";
@@ -105,6 +113,10 @@
 				Base,
 			);
 			mainGroup = 2292B89D2CFF2546006AB67A;
+			packageReferences = (
+				2292B8B82CFF25B8006AB67A /* XCRemoteSwiftPackageReference "Package1" */,
+				2292B8BB2CFF25CC006AB67A /* XCRemoteSwiftPackageReference "Package2" */,
+			);
 			productRefGroup = 2292B8A72CFF2546006AB67A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -344,6 +356,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2292B8B82CFF25B8006AB67A /* XCRemoteSwiftPackageReference "Package1" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/randhirmksingh/Package1.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		2292B8BB2CFF25CC006AB67A /* XCRemoteSwiftPackageReference "Package2" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/randhirmksingh/Package2.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2292B8B92CFF25B8006AB67A /* Package1 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2292B8B82CFF25B8006AB67A /* XCRemoteSwiftPackageReference "Package1" */;
+			productName = Package1;
+		};
+		2292B8BC2CFF25CC006AB67A /* Package2 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2292B8BB2CFF25CC006AB67A /* XCRemoteSwiftPackageReference "Package2" */;
+			productName = Package2;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2292B89E2CFF2546006AB67A /* Project object */;
 }
